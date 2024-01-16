@@ -1,6 +1,8 @@
 # Data Structures and Algorithms - Python, JavaScript, and Golang
 
-This folder contains implementations of data structures and algorithms in Python, JavaScript, and Golang.
+## Introduction
+
+In this folder, you will find various data structures and algorithms implemented in different programming languages. The goal is to provide a reference for those who are learning to code and want to see how these data structures and algorithms are implemented in different languages.
 
 ## Table of Contents
 
@@ -15,6 +17,3 @@ This folder contains implementations of data structures and algorithms in Python
 - [Prime](prime)
 
 
-## Introduction
-
-In this folder, you will find various data structures and algorithms implemented in different programming languages. Each implementation is organized in its respective language folder.
