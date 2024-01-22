@@ -15,7 +15,7 @@ In this folder, you will find various data structures and algorithms implemented
 - [Linear Search](linear-search)
 - [Power of Two](power-of-two)
 - [Prime](prime)
-- Sorting Algorithms
+- [Sorting Algorithms](sorting-algorithms)
   - [Bubble Sort](sorting-algorithms/bubble-sort)
     - Python: [bubbleSort.py](sorting-algorithms/bubble-sort/bubbleSort.py)
     - JavaScript: [bubbleSort.js](sorting-algorithms/bubble-sort/bubbleSort.js)
