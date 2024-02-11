@@ -33,3 +33,6 @@ In this folder, you will find various data structures and algorithms implemented
     - JavaScript: [quickSort.js](sorting-algorithms/quick-sort/quickSort.js)
     - Golang: [quickSort.go](sorting-algorithms/quick-sort/quickSort.go)
   - [Selection Sort](sorting-algorithms/selection-sort)
+    - Python: [selectionSort.py](sorting-algorithms/selection-sort/selectionSort.py)
+    - JavaScript: [selectionSort.js](sorting-algorithms/selection-sort/selectionSort.js)
+    - Golang: [selectionSort.go](sorting-algorithms/selection-sort/selectionSort.go)
