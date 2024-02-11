@@ -7,19 +7,35 @@ import (
 	"strings"
 )
 
-// insertionSort sorts the given slice of integers in ascending order using the insertion sort algorithm.
-func insertionSort(items []int) []int {
-	for i := range items {
-		temp := items[i]
-		j := i - 1
-
-		for j >= 0 && items[j] > temp {
-			items[j+1] = items[j]
-			j = j - 1
-		}
-		items[j+1] = temp
+func mergeSort(arr []int) []int {
+	if len(arr) <= 1 {
+		return arr
 	}
-	return items
+
+	mid := len(arr) / 2
+	left := arr[:mid]
+	right := arr[mid:]
+
+	return merge(mergeSort(left), mergeSort(right))
+}
+
+func merge(left, right []int) []int {
+	result := make([]int, 0)
+
+	for len(left) > 0 && len(right) > 0 {
+		if left[0] < right[0] {
+			result = append(result, left[0])
+			left = left[1:]
+		} else {
+			result = append(result, right[0])
+			right = right[1:]
+		}
+	}
+
+	result = append(result, left...)
+	result = append(result, right...)
+
+	return result
 }
 
 // main is the entry point of the program.
@@ -61,7 +77,7 @@ func main() {
 	fmt.Println("Original list: ", arr)
 
 	// Sort the list using the insertionSort function
-	sortedList := insertionSort(arr)
+	sortedList := mergeSort(arr)
 
 	// Print the sorted list
 	fmt.Println("Sorted list: ", sortedList)
