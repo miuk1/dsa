@@ -19,6 +19,7 @@ func isPrime(n int) bool {
 
 func main() {
 	fmt.Println("Enter the number:")
+	var n int
 	fmt.Scan(&n)
 	fmt.Println(isPrime(n))
 }
